@@ -1,7 +1,7 @@
 # ODVIS
 
 Odvis is a node.js visualisation tool for demographic open government data of Austria on a map.
-Use it on http://odivs.at/
+Use it on http://odvis.at/
 
 This REAMDE describes installing the software (a node-app) on your own server.
 
