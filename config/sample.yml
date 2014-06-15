@@ -1,0 +1,11 @@
+datasource: 
+  user: 'postgis'
+  password: '........'
+  host: '127.0.0.1'
+  port: 5432
+port: 8008
+wsport: 8002
+cachedir: '/tmp/millstone/odvis'
+windshaft_redis:
+  host: '127.0.0.1'
+  port: 6379

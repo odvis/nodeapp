@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= "ODVIS: " + title 
+    script(type='text/javascript').
+      var ODVIS =  {};
+      ODVIS.wsport = #{odvis.wsport};
+      ODVIS.port = #{odvis.port};
+    script(type='text/javascript' src='http://code.jquery.com/jquery-1.11.0.min.js')
+    script(type='text/javascript' src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+    script(type='text/javascript' src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js')
+    script(type='text/javascript' src='/javascripts/odvis.min.js')
+    script(type='text/javascript' src='/javascripts/deps.min.js')
+    link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    body(id='#{name}' class='#{odvis.node_env}')
+    div.navbar.navbar-inverse.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='visualize') 
+            img#logo(src='images/odvis2.svg')           
+          if odvis.node_env == "development"
+            span development
+        div.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='visualize')  Visualisieren 
+            li
+              a(href='http://blog.odvis.at/', target='_blank') Über Uns
+            li
+              a(href='contact') Impressum
+      if(name == 'visualize')
+        div.light
+          div.container
+            h2(id='console') #{title}
+    div#mapContainer &nbsp;   
+    div.container.content
+      block content
+    footer
+      script(type='text/javascript' src='/javascripts/odvis.min.js')
+      

@@ -1,0 +1,58 @@
+{
+  "name": "odvis",
+  "version": "0.0.2",
+  "main": "app.js",
+  "description": "Webapp to display open data from Austria on a map",
+  "url": "https://www.odvis.at",
+  "licenses": [
+    {
+      "type": "Apache License",
+      "url": "http://www.apache.org/licenses/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.mediacube.at:odvis/nodeapp.git"
+  },
+  "author": {
+    "name": "Fachhochschule Salzburg",
+    "email": "http://www.fh-salzburg.ac.at/",
+    "url": "office.mma@fh-salzburg.ac.at"
+  },
+  "contributors": [
+    {
+      "name": "Marius Schebella",
+      "email": "marius.schebella@fh-salzburg.ac.at"
+    },
+    {
+      "name": "Brigitte Jellinek",
+      "email": "brigitte.jellinek@fh-salzburg.ac.at"
+    },
+    {
+      "name": "Katrin Hewer",
+      "email": "khewer.mmt-m2012@fh-salzburg.ac.at"
+    }
+  ],
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.7",
+    "express-routescan": "*",
+    "jade": "*",
+    "semver": "*",
+    "onecolor": "*",
+    "underscore": "*",
+    "pg": "2.5.0",
+    "windshaft": "~0.19.4",
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "jasmine-node": "*",
+    "grunt-jasmine-node": "*",
+    "frisby": "*",
+    "config": "~0.4.36",
+    "js-yaml": "~3.0.2"
+  }
+}

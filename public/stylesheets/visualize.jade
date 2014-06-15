@@ -1,0 +1,25 @@
+extends layout
+
+block content    
+  div#left-navbar 
+    div.navarea.navbar-inverse  
+      div.header
+        div.btn_back2
+        div.btn_back1
+        h1 Datensatz suchen nach
+      div.searchbar
+      div#scroll
+        ul#datanav.nav.nav-list
+        div.clearfix
+    div.clearfix
+    div.tabbable.verticaltabs-container
+      a#x(data-toggle="tab")
+            i.glyphicon.glyphicon-remove
+      ul.nav.nav-tabs
+        li.active
+          a(data-toggle="tab")
+            span.title Daten suchen
+        li
+          a(data-toggle="tab")
+            span.title Meine Daten
+    div.clearfix
